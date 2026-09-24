@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arya - Portofolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tampilanprojek.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <span class="logo">My<span>Portofolio</span></span>
+    <button id="menuBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="navMenu">
+      <a href="#about">ABOUT ME</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#projects">PROJECT</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <span class="corner corner-tl"></span>
+  <span class="corner corner-br"></span>
+  <p class="hero-tag">✦ Fullstack Developer</p>
+  <h1>Membangun Web yang<br>Keren, Edukatif &amp; Inspiratif.</h1>
+  <p class="hero-desc">Saya Arya Damar Yusuf Putra, Website saya ini berisi tentang profil saya sendiri dan juga untuk branding untuk proyek yang saya kerjakan.</p>
+  <div class="hero-btns">
+    <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+    <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2><span class="heading-mark"></span>ABOUT ME</h2>
+  <p>Arya Damar Yusuf Putra Mahasiswa Angkatan 2025 Fakultas Ilmu Komputer Prodi Informatika Universitas Jember. Asal Banyuwangi memiliki Ketertarikan di bidang IT dan juga Design Grafis. Berawal dari SMK yang masuk jurusan Teknik Komputer Jaringan hingga akhirnya menempuh pendidikan di Universitas Jember di Prodi Informatika</p>
+</section>
+
+<section id="skills">
+  <h2><span class="heading-mark"></span>SKILLS</h2>
+  <div class="skill-tags">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>UI/UX Design</span>
+    <span>C++</span>
+    <span>Scala</span>
+    <span>Python</span>
+    <span>C#</span>
+    <span>Git</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2><span class="heading-mark"></span>PROJECT</h2>
+  <div class="project-grid">
+    <div class="card">
+      <div class="card-thumb">01</div>
+      <h3>Software Development</h3>
+      <p>Membuat Website profil pribadi untuk portofolio.</p>
+    </div>
+    <div class="card">
+      <div class="card-thumb">02</div>
+      <h3>Service Hardware</h3>
+      <p>Melakukan Perbaikan dan Maintenance untuk Hardware seperti Komputer, Laptop dan Printer.</p>
+    </div>
+    <div class="card">
+      <div class="card-thumb">03</div>
+      <h3>Design Grafis</h3>
+      <p>Membuat Design Visual yang Menarik dan Estetik Menggunakan Figma.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2><span class="heading-mark"></span>CONTACT</h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Nama">
+    <input type="email" id="email" placeholder="Email">
+    <textarea id="message" placeholder="Pesan"></textarea>
+    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+  </form>
+  <p id="status"></p>
+</section>
+
+<footer>
+  <p>&copy; <span id="year"></span> Yakk. Semua hak dilindungi.</p>
+</footer>
+
+<div class="dot-nav" id="dotNav">
+  <button data-target="hero" aria-label="Beranda"></button>
+  <button data-target="about" aria-label="Tentang"></button>
+  <button data-target="skills" aria-label="Keahlian"></button>
+  <button data-target="projects" aria-label="Proyek"></button>
+  <button data-target="contact" aria-label="Kontak"></button>
+</div>
+
+<script src="tombolprojek.js"></script>
+</body>
+</html>
